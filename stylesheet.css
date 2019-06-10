@@ -1,0 +1,61 @@
+body {
+    height:100%;
+    margin:0;
+    overflow: auto;
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+#headerbox {
+    background-color: #222629;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+#headertext {
+    color: #86c232;
+    font-size: 1.5vw;
+}
+
+#outercontentbox {
+    background-color: #6b6e70;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex: 1 0 auto;
+    min-height: 80vh;
+    overflow:auto;
+}
+
+#contentcontainer {
+    background-color: #474b4f;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    flex: 1;
+}
+
+#outerfooterbox {
+    background-color: #222629;
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+
+.bannerimg {
+    width: 100vw;
+    overflow: hidden;
+    height: 19vw;
+}
+.plexserif {
+    font-family: 'IBM Plex Serif', serif;
+}
