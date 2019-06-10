@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,79 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <script src="script.js"></script>
+    <title>Reptile Island</title>
 </head>
+
 <body>
-    <div id="headerbox">
-    <header class="plexserif" id="headertext">Reptile Island</header>'
+    <div id="header">
     </div>
     <div class="bannerimg">
-    <img src="Images/BannerMain.jpg"/>
-    </div> 
+        <img id="mainbanner" src="Images/BannerMain.jpg" />
+    </div>
     <div id="outercontentbox">
         <div id="contentcontainer">
-            <h1>Welcome to Reptile Island. The leading seller of specialty reptile products.</h1>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod fugiat vitae laborum corporis, reiciendis doloremque quasi, porro nihil, commodi ad quas cupiditate? Aperiam nobis, quam reiciendis cumque aliquam expedita?
-            Sint vero libero veniam, quis dolorum eveniet error vitae iusto obcaecati perferendis eius possimus, aliquam facilis molestias exercitationem, suscipit nesciunt. Dicta cupiditate impedit ducimus, fugit aliquid quidem possimus maxime quam!
-            Assumenda eaque consequuntur, totam dolores voluptate corporis et nemo velit magnam facere error quaerat amet veniam eius reiciendis exercitationem dignissimos quas quisquam. Voluptate veniam quisquam fugit, exercitationem porro optio assumenda?
-            Est voluptates eius similique quia labore tenetur et nam. Illo non, vitae totam eaque a, dignissimos ipsa soluta aut quia laboriosam quos dolore iure quasi ad delectus exercitationem! Repellendus, officia!
-            Minima cumque officia sunt laudantium nesciunt! Architecto, odio cupiditate iure eligendi beatae nemo! Magnam nobis porro at illum, velit numquam fugit necessitatibus doloremque ducimus explicabo? Nostrum cupiditate officia quisquam tempora.</h1>
+            <div id="shopcontainer">
+                <div id="shopnavbuttoncontainer">
+                    <button class="shopnavbuttons">All</button>
+                    <button class="shopnavbuttons">New</button>
+                    <button class="shopnavbuttons">Popular</button>
+                </div>
+                <div id="productboxescontainer">
+                    <div class="productboxcontainer">
+                        <div class="productboxpic">
+                            <img src="Images/Products/Reptitherm-50-60.jpg">
+                        </div>
+                        <div class="productinfo">
+                            <p class="productname">50-60 gallon Reptitherm under tank heater.</p>
+                            <button class="addtocartbutton" id="reptiThermButton">Buy</button>
+                        </div>
+                    </div>
+                    <div class="productboxcontainer">
+                            <div class="productboxpic">
+                                <img src="Images/Products/Reptitherm-50-60.jpg">
+                            </div>
+                            <div class="productinfo">
+                                <p class="productname">50-60 gallon Reptitherm under tank heater.</p>
+                                <button class="addtocartbutton">Buy</button>
+                            </div>
+                        </div>
+                        <div class="productboxcontainer">
+                                <div class="productboxpic">
+                                    <img src="Images/Products/Reptitherm-50-60.jpg">
+                                </div>
+                                <div class="productinfo">
+                                    <p class="productname">50-60 gallon Reptitherm under tank heater.</p>
+                                    <button class="addtocartbutton">Buy</button>
+                                </div>
+                            </div><div class="productboxcontainer">
+                                    <div class="productboxpic">
+                                        <img src="Images/Products/Reptitherm-50-60.jpg">
+                                    </div>
+                                    <div class="productinfo">
+                                        <p class="productname">50-60 gallon Reptitherm under tank heater.</p>
+                                        <button class="addtocartbutton">Buy</button>
+                                    </div>
+                                </div><div class="productboxcontainer">
+                                        <div class="productboxpic">
+                                            <img src="Images/Products/Reptitherm-50-60.jpg">
+                                        </div>
+                                        <div class="productinfo">
+                                            <p class="productname">50-60 gallon Reptitherm under tank heater.</p>
+                                            <button class="addtocartbutton">Buy</button>
+                                        </div>
+                                    </div>       
+                </div>
+            </div>
+
         </div>
-        <div id="push"></div>
     </div>
-    <div id="outerfooterbox">
-    <footer>
-        <h1>Contact:</h1>
-        <p>email: <a href="mailto:dvowen@cox.net">Dvowen@cox.net</a></p>
-    </footer>
+    <div id="footer">
+
     </div>
 </body>
+<script>
+    $('#header').load('HeadAndFoot/header.html')
+    $('#footer').load('HeadAndFoot/footer.html')
+</script>
 </html>

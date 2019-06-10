@@ -1,0 +1,4 @@
+$(document).ready(function(){
+    $( "#header" ).load( '../HeadAndFoot/header.html' );
+    $( "#footer" ).load( '../HeadAndFoot/footer.html' );
+});

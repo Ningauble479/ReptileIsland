@@ -13,7 +13,6 @@ body {
 #headerbox {
     background-color: #222629;
     width: 100vw;
-    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +36,7 @@ body {
 }
 
 #contentcontainer {
-    background-color: #474b4f;
+    background-color: white;
     margin-left: 10vw;
     margin-right: 10vw;
     flex: 1;
@@ -51,10 +50,79 @@ body {
     margin-bottom: 0;
 }
 
+#shopnavbuttoncontainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#mainbanner {
+    display: flex;
+    flex: 1;
+    width: 150vw;
+}
+
+#productboxescontainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.productinfocontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.productboxcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    align-items: center;
+    margin: 3vw 3vw 3vw 3vw;
+}
+
+.productinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.addtocartbutton {
+    width: 3vw;
+    background-color: white;  
+    border: none;  
+    color: black;  
+    align-self: center;
+}
+
+.addtocartbutton:hover {
+    Background-color: #61892f;
+    border-radius: 12px;
+}
+
 .bannerimg {
     width: 100vw;
     overflow: hidden;
     height: 19vw;
+}
+
+.shopnavbuttons {
+    width: 4em;
+    height: 2em;  
+    margin-left: .5em; 
+    margin-top: 1em;  
+    margin-right: .5em;  
+    background-color: white;  
+    border: none;  
+    color: black;   
+    font-size: 1.3em;
+}
+
+.shopnavbuttons:hover {
+    Background-color: #61892f;
+    border-radius: 12px;
 }
 .plexserif {
     font-family: 'IBM Plex Serif', serif;
