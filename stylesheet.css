@@ -10,69 +10,71 @@ body {
     overflow-x: hidden;
 }
 
-#headerbox {
-    background-color: #222629;
-    width: 100vw;
+
+/* --css for product information skeleton */
+.productinfocontainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-}
-
-#headertext {
-    color: #86c232;
-    font-size: 1.5vw;
-}
-
-#outercontentbox {
-    background-color: #6b6e70;
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    flex: 1 0 auto;
-    min-height: 80vh;
-    overflow:auto;
-}
-
-#contentcontainer {
-    background-color: white;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    flex: 1;
-}
-
-#outerfooterbox {
-    background-color: #222629;
-    width: 100%;
-    display: flex;
-    flex-shrink: 0;
-    margin-bottom: 0;
-}
-
-#shopnavbuttoncontainer {
-    display:flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80vh;    
+}
+
+.productInfoLeft {
+    width: 60vw;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    min-width: 40vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.productInfoRight {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    justify-content: space-evenly
+}
+
+.productInfoImg {
+    padding: 0;
+    width: -webkit-fill-available;
+    object-fit: contain;
+}
+
+.productInfoName {
+    margin-bottom: 2vh;
+    margin-right: 10em;
+    border-bottom: 1px solid gray;
+    padding-bottom: 3vh;
+}
+
+.productInfoExplain {
+    margin-right: 20em;
+    margin-bottom: 22vh;
+    padding-bottom: 3vh;
+    border-bottom: 1px solid gray;
+}
+
+.productInfoAbout {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-#mainbanner {
-    display: flex;
-    flex: 1;
-    width: 150vw;
-}
+/* --End of css for product information skeleton-- */
+
+/* --css of product boxes -- */
 
 #productboxescontainer {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-
-.productinfocontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .productboxcontainer {
@@ -101,6 +103,9 @@ body {
     Background-color: #61892f;
     border-radius: 12px;
 }
+/* -end of css for product boxes-- */
+
+/* --css for header and banner--*/
 
 .bannerimg {
     width: 100vw;
@@ -108,22 +113,124 @@ body {
     height: 19vw;
 }
 
-.shopnavbuttons {
-    width: 4em;
-    height: 2em;  
+
+#mainbanner {
+    display: flex;
+    flex: 1;
+    width: 150vw;
+}
+
+/* --end of css for header and banner-- */
+
+/* --css for main content container-- */
+
+#shopnavbuttons {
+    font-size: 24px;
     margin-left: .5em; 
     margin-top: 1em;  
     margin-right: .5em;  
-    background-color: white;  
-    border: none;  
-    color: black;   
-    font-size: 1.3em;
+    background-color: #80F30C;
+    color: black;  
+    border: none;
+    border-radius: 12px;  
 }
 
-.shopnavbuttons:hover {
-    Background-color: #61892f;
+#outercontentbox {
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex: 1 0 auto;
+    min-height: 80vh;
+    overflow:auto;
+}
+
+#contentcontainer {
+    background-color: white;
+    flex: 1;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+
+/* --end of content for main content container-- */
+
+/* --css for shop container-- */
+
+#shopnavbuttons:hover {
+    Background-color: #168200;
     border-radius: 12px;
 }
+#shopnavbuttons:focus {
+    Background-color: #168200;
+    border-radius: 12px;
+    box-shadow: none;
+}
+
+#shopnavbuttoncontainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    margin: 50px;
+    min-height: 400px;
+    border-radius: 24px;
+}
+
+/* --end of css for shop container-- */
+
+/* --css for footer-- */
+
+
+
+/* --end of css for footer-- */
+
+/* --start of sign in css */
+
+#signinbutton {
+    background-color: #80F30C;
+    border: #80F30C;
+    margin-top:25px;
+    margin-left:135px;
+}
+
+#signinbutton:hover {
+    background-color: #168200;
+    border: #168200;
+}
+
+#signinbutton:focus {
+    background-color: #168200;
+    border: #168200;
+    box-shadow: none;
+}
+
+
+
+/* --end of sign in css*/
+
+/* --added text fonts-- */
+
 .plexserif {
     font-family: 'IBM Plex Serif', serif;
 }
+.varela{
+font-family: 'Varela Round', sans-serif;
+}
+.yanone{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.ubuntu{
+font-family: 'Ubuntu Condensed', sans-serif;
+}
+.coda{
+font-family: 'Coda', cursive;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* -- end of added text fonts-- */

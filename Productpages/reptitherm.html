@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Reptile Island</title>
 </head>
 
@@ -21,22 +21,22 @@
         <div id="contentcontainer">
             <div class="productinfocontainer">
                 <div class="productInfoLeft">
-                    <img src="./../Images/Products/Reptitherm-50-60.jpg">
+                    <img class="productInfoImg" src="./../Images/Products/Reptitherm-50-60.jpg">
                 </div>
                 <div class="productInfoRight">
-                    <div class="infoAbout">
-                        <h1>Repti Therm Under Tank Heater</h1>
-                        <p>The Repti Therm Under Tank Heater is Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <div class="productInfoAbout">
+                        <h1 class="productInfoName">Repti Therm Under Tank Heater</h1>
+                        <p class="productInfoExplain">The Repti Therm Under Tank Heater is Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Blanditiis minus ipsum amet quos dolor perspiciatis veniam saepe, voluptates, reprehenderit
                             repellendus commodi ad excepturi repellat magni. Eum voluptates facilis repudiandae quos?
                         </p>
                     </div>
                     <div class="infoAvailable">
-                        <p>Available: In Stock!</p>
+                        <p id="stockCheck">Availability: </p>
                     </div>
-                    <div class="infoPrice">
-                        <h1>$25.89</h1>
-                        <button>buy</button>
+                    <div class="productInfoPriceContainer">
+                        <h1 class="productInfoPrice">$25.89</h1>
+                        <button class="productInfoBuyButton" id="productInfoBuyButton">buy</button>
                     </div>
                 </div>
 
@@ -45,5 +45,7 @@
         </div>
     </div>
     <div id="footer"></div>
+    <script src="script.js"></script>
+    <script src="../Scripts/stockCheck.js"></script>
 </body>
 </html>

@@ -9,32 +9,34 @@
     <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
     <script src="script.js"></script>
+    <script src='../Scripts/stockCheck.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Reptile Island</title>
 </head>
 
 <body>
     <div id="header"></div>
     <div class="bannerimg">
-        <img id="mainbanner" src="../Images/BannerMain.jpg" />
-    </div>
+            <img id="mainbanner" src="../Images/BannerMain.jpg" />
+        </div>
     <div id="outercontentbox">
         <div id="contentcontainer">
             <div class="productinfocontainer">
                 <div class="productInfoLeft">
-                
+                    <img class="productInfoImg" src="">
                 </div>
                 <div class="productInfoRight">
-                    <div class="infoAbout">
-                        <h1>a</h1>
-                        <p>a
+                    <div class="productInfoAbout">
+                        <h1 class="productInfoName"></h1>
+                        <p class="productInfoExplain">
                         </p>
                     </div>
                     <div class="infoAvailable">
-                        <p>Available: In Stock!</p>
+                        <p>Availability: <p id="stockCheck"></p></p>
                     </div>
-                    <div class="infoPrice">
-                        <h1>Price:</h1>
-                        <button>buy</button>
+                    <div class="productInfoPriceContainer">
+                        <h1 class="productInfoPrice"></h1>
+                        <button class="productInfoBuyButton"></button>
                     </div>
                 </div>
 
@@ -44,5 +46,4 @@
     </div>
     <div id="footer"></div>
 </body>
-
 </html>
