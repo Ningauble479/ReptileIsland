@@ -10,18 +10,12 @@ $(document).ready(function(){
     $("body").append(foot);
 
 
-    $( "#header" ).load( 'HeadAndFoot/header.html', function() {
+    $( "#header" ).load( '../HeadAndFoot/header.html', function() {
         var logo = $('#logo');
-        logo.attr("src","Images/LogoIdeas/lizzard.png")
+        logo.attr("src","../Images/LogoIdeas/lizzard.png")
     });
 
 
 
-    $( "#footer" ).load( 'HeadAndFoot/footer.html' );
-
-
-
-$('#shopcardbuybutton').click(function() {
-    window.location = "Productpages/reptitherm.html";
- });
+    $( "#footer" ).load( '../HeadAndFoot/footer.html' );
 });

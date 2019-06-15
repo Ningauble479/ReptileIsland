@@ -1,35 +1,50 @@
-<div class="navbar bg-secondary sticky-top" id="">
-        <img src="Images/Logo Ideas/lizzard.png">
+<div class="navbar bg-secondary sticky-top" id="top">
+
+        <img id="logo">
+        <div class="d-flex flex-direction-row">
+        <a class="btn mr-3" href="../adminpage/adminpage.html" role="button" style="color:black">Admin</a>
+        <a class="btn mr-3" href="../index.html" role="button" style="color:black">Home</a>
+        <div class="dropdown mr-3">
+                <a style="color:black" class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Help
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#" style="color:black">Contact Support</a>
+                <a class="dropdown-item" href="#" style="color:black">FAQ</a>
+                <a class="dropdown-item" href="#" style="color:black">Email Us</a>
+                </div>
+        </div>
 
         <div class="dropdown mr-3">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black">
                         Sign in here!
                 </button>
                 <div class="dropdown-menu dropdown-menu-right" style="width: 400px; border-bottom: 10px solid #80F30C;">
                         <form class="px-4 py-3">
                                 <div class="form-group">
-                                        <label for="exampleDropdownFormEmail1"  style="font-weight:bold;">Email address</label>
+                                        <label for="exampleDropdownFormEmail1"  style="font-weight:bold; color:black;">Email address</label>
                                         <input type="email" class="form-control" id="exampleDropdownFormEmail1"
                                                 placeholder="email@example.com">
                                 </div>
                                 <div class="form-group">
-                                        <label for="exampleDropdownFormPassword1" style="font-weight:bold;">Password</label>
+                                        <label for="exampleDropdownFormPassword1" style="font-weight:bold; color:black;">Password</label>
                                         <input type="password" class="form-control" id="exampleDropdownFormPassword1"
                                                 placeholder="Password">
                                 </div>
                                 <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                        <label class="form-check-label" for="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck" style="color:black">
                                                 Remember me
                                         </label>
                                 </div>
-                                <button type="submit" class="btn btn-primary" id="signinbutton">Sign in</button>
+                                <button type="submit" class="btn btn-primary" id="signinbutton" style="color:black">Sign in</button>
                         </form>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#" style="text-align:center;">Dont have an account?</a>
                         <a class="dropdown-item" href="#" style="text-align:center;">Forgot password?</a>
                 </div>
         </div>
+</div>
 </div>
 </div>

@@ -10,6 +10,34 @@ body {
     overflow-x: hidden;
 }
 
+/* --bootstrap editing-- */
+
+.btn {
+    background-color: #80F30C!important;
+    border:none!important;
+    box-shadow:none!important;
+    font-family: 'Oswald', sans-serif!important;
+    font-weight: 400!important;
+    font-size:18px!important;
+    
+}
+
+.btn:hover {
+    background-color: #168200!important;
+    border:none!important;
+    box-shadow:none!important;
+    font-family: 'Oswald', sans-serif!important;
+}
+
+.btn:focus {
+    background-color: #168200!important;
+    border:none!important;
+    box-shadow:none!important;
+    font-family: 'Oswald', sans-serif!important;
+}
+
+/* --end of bootstrap editing-- */
+
 
 /* --css for product information skeleton */
 .productinfocontainer {
@@ -173,6 +201,14 @@ body {
     justify-content: center;
 }
 
+#shopcardbuybutton {
+    color:black;
+    font-weight:bold;
+    width:100px;
+    height:40px;
+    font-size:20px;
+}
+
 .card {
     margin: 50px;
     min-height: 400px;
@@ -234,3 +270,29 @@ font-family: 'Coda', cursive;
 }
 
 /* -- end of added text fonts-- */
+
+/* -- scrollbar css -- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: gray;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(56, 56, 56); 
+  }
+
+
+/* -- end of scrollbar css -- /*
